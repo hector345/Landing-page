@@ -1,0 +1,16 @@
+Crear una landing sencilla que posea las siguientes caracteristicas:
+- Se debe usar el PSD (Landing_webinar2.psd) como base para crear el diseño de la landing.
+- La landing debe poseer un formulario de registro como se observa en la imagen de ejemplo 01.jpg.
+- Los datos del formulario deben mandarse por correo a una cuenta de su eleccion con copia a raul@difraxion.com con el Asunto "TEST DFX".
+- Al enviar los datos, se debe sustituir el formulario por un video incrustado como se muestra en la imagen 02.jpg (video de su eleccion y de cualquier plataforma)
+- El sitio debe ser responsivo.
+- De preferencia montar el sitio en un hosting.
+- No usar un framework.
+
+Evidencia:
+- Se deben mandar los archivos comprimidos al correo raul@difraxion.com (se puede usar wetranfer en caso de no poder adjuntarlo)
+- Si el sitio se subio a un servidor, mandar URL.
+
+
+
+
