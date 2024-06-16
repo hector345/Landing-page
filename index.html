@@ -9,10 +9,11 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
   <link href="css/EstilosMaestros.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 </head>
 
@@ -23,10 +24,18 @@
     <img src="img/dfx_bco.webp" class="" alt="Difraxion Logo">
   </div>
   <div style="position: fixed; right: 0; top: 0;">
-    <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="250" cy="250" r="230" stroke="white" stroke-width="20" fill="none" stroke-opacity="0.8" />
-    </svg>
+    <img src="/svg/circulo_3_4.svg" alt="">
   </div>
+  <div style="position: fixed; left: 0; top: 50%; transform: translateY(-50%);">
+    <img src="/svg/circulo_1_2.svg" alt="">
+  </div>
+  <div class="puntos_posicion1">
+    <img src="svg/puntos.svg" alt="">
+  </div>
+  <div class="puntos_posicion2">
+    <img src="svg/puntos.svg" alt="">
+  </div>
+
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -58,9 +67,12 @@
         <!-- linea -->
         <hr class="linea_intermedia_abajo">
         <!-- formaulario -->
-
-
         <div class="form-wrapper_custom_form">
+
+          <div class="video-container hide" id="video-container">
+              
+          </div>
+
           <form class="form_custom_form" id="form-contacto">
 
             <div class="form-group_custom_form">
@@ -110,23 +122,19 @@
             <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMINICACIÓN INTERNA</h4>
             <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMINICACIÓN INTERNA</h4>
           </div>
-
-
-
         </div>
-
       </div>
     </div>
-    <div class="parallax tranparencia_img"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax tranparencia_img"></div>
   </div>
 
   <div class="speakers">
     <div class="speaker">
-      <img class="filtro_gris circulo_blanco" src="img/1.png" alt="David Enriquez">
+      <img class="filtro_gris circulo_blanco" src="img/2.jpg" alt="David Enriquez">
       <p><strong class="texto_negritas">David Enriquez</strong><br>Director General Difraxion</p>
     </div>
     <div class="speaker">
-      <img class="filtro_gris circulo_blanco" src="img/2.png" alt="Andrea Huerta">
+      <img class="filtro_gris circulo_blanco" src="img/1.jpg" alt="Andrea Huerta">
       <p><strong class="texto_negritas">Andrea Huerta</strong><br>Gerente de proyectos</p>
     </div>
   </div>
@@ -154,6 +162,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 

@@ -1,0 +1,14 @@
+<svg width="280" height="280" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+      <defs>
+        <mask id="cut-out">
+          <!-- Fondo blanco para el círculo -->
+          <rect width="500" height="500" fill="white" />
+          <!-- Cuarto superior derecho a recortar -->
+          <rect x="250" y="0" width="250" height="250" fill="black" />
+        </mask>
+      </defs>
+
+      <!-- Círculo completo con máscara aplicada -->
+      <circle cx="330" cy="170" r="230" stroke="white" stroke-width="80" fill="none" stroke-opacity="0.8"
+        mask="url(#cut-out)" />
+    </svg>

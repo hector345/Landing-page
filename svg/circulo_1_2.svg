@@ -1,0 +1,13 @@
+<svg width="125" height="250" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="half-circle">
+          <rect x="0" y="0" width="125" height="250" />
+        </clipPath>
+      </defs>
+
+      <!-- Círculo completo con clipPath aplicado -->
+      <g transform="rotate(180, 62.5, 125)">
+        <circle cx="125" cy="125" r="115" stroke="white" stroke-width="20" fill="none" stroke-opacity="0.8"
+          clip-path="url(#half-circle)" />
+      </g>
+    </svg>

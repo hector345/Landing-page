@@ -26,7 +26,7 @@ function sendEmail($nombre, $email, $telefono, $ciudad)
         // Contenido del correo para el usuario principal
         $mail->isHTML(true);
         $mail->Subject = $_ENV['CORREO_ASUNTO']; // Usa el asunto del correo desde la variable de entorno
-        $body = file_get_contents('php/email/templates/template.html'); // Lee el archivo de plantilla
+        $body = file_get_contents('email/templates/template.html'); // Lee el archivo de plantilla
         // {titulo} {color_fondo}{subtitulo}{texto} {img_logo} {img_footer} {color_texto} {color_footer}
         // html de texto {texto} usara $nombre, $email, $telefono, $ciudad
         $html_texto = "<p>Gracias por contactarnos, <strong>$nombre</strong>. Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>";
@@ -58,7 +58,8 @@ function sendEmail($nombre, $email, $telefono, $ciudad)
         $color_texto = "#333";
         $color_footer = "#333";
         $texto= $html_texto;
-        $body = str_replace(['{titulo}', '{color_fondo}', '{subtitulo}', '{texto}', '{img_logo}', '{img_footer}', '{color_texto}', '{color_footer}'], [$titulo, $color_fondo, $subtitulo, $texto, $img_logo, $img_footer, $color_texto, $color_footer], $body);
+        $body2 = file_get_contents('email/templates/template.html'); 
+        $body2 = str_replace(['{titulo}', '{color_fondo}', '{subtitulo}', '{texto}', '{img_logo}', '{img_footer}', '{color_texto}', '{color_footer}'], [$titulo, $color_fondo, $subtitulo, $texto, $img_logo, $img_footer, $color_texto, $color_footer], $body2);
         $mail->Body = $body;
 
         $mail->send();

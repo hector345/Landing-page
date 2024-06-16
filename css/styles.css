@@ -58,6 +58,9 @@ body {
     padding: 20px 0;
     background-color: #000;
     color: #FFF;
+    z-index: -3;
+    position: relative;
+    z-index: 3;
 }
 
 /* espacio_fondo */
@@ -125,7 +128,8 @@ body {
 .speakers {
     display: flex;
     justify-content: center;
-    background-color: #FFCC00;
+    /* amarillo */
+    background-color: #FFbd00;
     gap: 20px;
     /* margen interior superior */
     padding: 20px 0;
@@ -297,6 +301,10 @@ body {
     margin: 0 auto;
     /* Centra el elemento horizontalmente */
     margin-top: 15px;
+    /* pasar hasta delante de la capa */
+    position: relative;
+    z-index: 4;
+    /* Aumenta este valor para que sea mayor que el de .puntos_posicion2 */
 }
 
 .title_custom_form {
@@ -372,4 +380,20 @@ body {
     .form-group-fullwidth_custom_form {
         grid-column: span 1;
     }
+}
+
+/* position: fixed; right: 0; top: 0; */
+
+
+.puntos_posicion1 {
+    position: absolute;
+    right: -264px;
+    top: 226px;
+}
+
+.puntos_posicion2 {
+    position: fixed;
+    bottom: 7px;
+    left: 131px;
+    z-index: 3;
 }
