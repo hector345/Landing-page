@@ -55,6 +55,8 @@ Este proyecto consiste en crear una landing page sencilla siguiendo las siguient
    composer install
    ```
 
+Recuerda que debes ir al directorio que se creó antes de ejecutar el comando.
+
 4. Instalar npm, el administrador de paquetes de Node.js. Puedes descargar Node.js desde el sitio web oficial de Node.js e instalarlo siguiendo las instrucciones proporcionadas.
 
    ```
