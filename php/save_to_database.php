@@ -21,7 +21,7 @@ function saveToDatabase($nombre, $email, $telefono, $ciudad)
 
         // Si el contacto ya existe, retornar false
         if ($existingContact) {
-            return false;
+            return true;
         }
 
         // Si el contacto no existe, insertarlo

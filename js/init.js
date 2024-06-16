@@ -15,7 +15,11 @@ document.getElementById('form-contacto').addEventListener('submit', function (ev
 
   let recaptchaResponse = grecaptcha.getResponse();
   if (!recaptchaResponse) {
-    alert('Por favor, complete el reCAPTCHA.');
+    Swal.fire({
+      icon: 'warning',
+      title: 'Captcha',
+      text: 'Por favor, complete el captcha.'
+    });
     return;
   }
 

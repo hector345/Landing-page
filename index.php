@@ -1,3 +1,9 @@
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/');
+$dotenv->load();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,21 +87,17 @@
             </div>
             <div class="form-group_custom_form">
               <label for="email" class="label_custom_form">Email <span class="required_custom_form">*</span></label>
-              <input type="email" id="email" name="email" class="form-control_custom_form"
-                placeholder="johndoe@email.com" required>
+              <input type="email" id="email" name="email" class="form-control_custom_form" placeholder="johndoe@email.com" required>
             </div>
             <div class="form-group_custom_form">
-              <label for="telefono" class="label_custom_form">Teléfono <span
-                  class="required_custom_form">*</span></label>
-              <input type="tel" id="telefono" name="telefono" class="form-control_custom_form" placeholder="1234567890"
-                required>
+              <label for="telefono" class="label_custom_form">Teléfono <span class="required_custom_form">*</span></label>
+              <input type="tel" id="telefono" name="telefono" class="form-control_custom_form" placeholder="1234567890" pattern="[0-9]{1,12}" oninput="this.value = this.value.replace(/[^0-9]/g, '').substring(0, 12)" required>
             </div>
             <div class="form-group_custom_form">
               <label for="ciudad" class="label_custom_form">Ciudad <span class="required_custom_form">*</span></label>
-              <input type="text" id="ciudad" name="ciudad" class="form-control_custom_form" placeholder="Ciudad"
-                required>
+              <input type="text" id="ciudad" name="ciudad" class="form-control_custom_form" placeholder="Ciudad" required>
             </div>
-            <div class="g-recaptcha" data-sitekey="6Lf70PkpAAAAADgXWRynu52ZkWIQUuSx-wTKgUrf"></div>
+            <div class="g-recaptcha" data-sitekey="<?php echo $_ENV['RECAPTCHA_PUBLIC']; ?>"></div>
             <div class="form-group_custom_form form-group-fullwidth_custom_form">
               <button type="submit" class="btn_custom_form"><i class="ti ti-send"></i>ENVIAR</button>
             </div>
@@ -118,9 +120,9 @@
           </h5>
           <!-- contenedor de letras sube el texto para empalmar a h5 -->
           <div class="contenedor_letras">
-            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMINICACIÓN INTERNA</h4>
-            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMINICACIÓN INTERNA</h4>
-            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMINICACIÓN INTERNA</h4>
+            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMUNICACIÓN INTERNA</h4>
+            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMUNICACIÓN INTERNA</h4>
+            <h4 class="texto_borde_atras_tranparencia h4_sin_espacio">COMUNICACIÓN INTERNA</h4>
           </div>
         </div>
       </div>

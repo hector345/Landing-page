@@ -34,23 +34,62 @@ Este proyecto consiste en crear una landing page sencilla siguiendo las siguient
 6. **Hosting** (opcional, pero preferido):
    - Montar el sitio en un hosting y proporcionar la URL.
 
+## Pasos para montar el proyecto
+1. Clonar el repositorio desde GitHub en tu directorio local:
+
+   ```
+   git clone https://github.com/hector345/difraxion
+   ```
+
+2. Asegurarse de tener instalado PHP 8 en tu sistema. Puedes verificar la versión de PHP ejecutando el siguiente comando en la terminal:
+
+   ```
+   php -v
+   ```
+
+   Si no tienes PHP 8 instalado, puedes descargarlo e instalarlo desde el sitio web oficial de PHP.
+
+3. Instalar Composer, una herramienta de administración de dependencias para PHP. Puedes descargar Composer desde el sitio web oficial de Composer e instalarlo siguiendo las instrucciones proporcionadas.
+
+   ```
+   composer install
+   ```
+
+4. Instalar npm, el administrador de paquetes de Node.js. Puedes descargar Node.js desde el sitio web oficial de Node.js e instalarlo siguiendo las instrucciones proporcionadas.
+
+   ```
+   npm install
+   ```
+
+5. Agregar las variables de entorno necesarias para la configuración del proyecto en el archivo `.env` ubicado en la raíz del proyecto. Puedes incluir las llaves de reCAPTCHA, las credenciales de la base de datos y la configuración del correo electrónico.
+
+
+Una vez que hayas completado estos pasos, habrás montado el proyecto y estará listo para su uso.
+
+## Desarrollo extra
+
+Para esta prueba técnica, de manera proactiva se realizó lo siguiente:
+
+- Se creó una base de datos y una tabla para almacenar la información de los contactos. La estructura de la tabla es la siguiente:
+
+```sql
+CREATE TABLE `contacts` (
+   `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+   `nombre` VARCHAR(255) NOT NULL,
+   `email` VARCHAR(255) NOT NULL,
+   `telefono` VARCHAR(255) NOT NULL,
+   `ciudad` VARCHAR(255) NOT NULL,
+   `created_at` TIMESTAMP NULL DEFAULT NULL,
+   `updated_at` TIMESTAMP NULL DEFAULT NULL,
+   `deleted_at` TIMESTAMP NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+- Se implementó reCAPTCHA para evitar el registro de datos por parte de sistemas automáticos.
+- Además del almacenamiento de datos, se utilizó PDO para prevenir la inyección SQL.
+
+
 ## Evidencia
 
 - Comprimir y enviar los archivos del proyecto a `raul@difraxion.com`. Si el archivo es muy grande, utilizar WeTransfer.
 - Si el sitio se subió a un servidor, incluir la URL en el correo.
-
-## Diseño de Base de datos
-
-```sql
-CREATE TABLE `contacts` (
-    `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    `nombre` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
-    `telefono` VARCHAR(255) NOT NULL,
-    `ciudad` VARCHAR(255) NOT NULL,
-    `created_at` TIMESTAMP NULL DEFAULT NULL,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
-    `deleted_at` TIMESTAMP NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-```
