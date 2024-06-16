@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Difraxion Webinar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="node_modules/@tabler/core/dist/css/tabler.min.css"> -->
+    <link rel="stylesheet" href="node_modules/@tabler/icons-webfont/dist/tabler-icons.min.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFCC00;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            margin: 0 auto;
+
+            background-color: #FFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        h1 {
+            color: #000;
+            margin: 0;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .webinar {
+            background-color: #FFCC00;
+            padding: 20px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .webinar-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .webinar-header span {
+            font-size: 1.2em;
+            margin: 0 5px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .time {
+            margin: 0 10px;
+        }
+
+        .number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .label {
+            font-size: 1em;
+        }
+
+        .play-button img {
+            max-width: 50px;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: #000;
+            color: #FFCC00;
+            padding: 10px 0;
+            margin: 0px;
+        }
+
+        .speakers {
+            display: flex;
+            justify-content: center;
+            background-color: #FFCC00;
+            gap: 20px;
+            /* margen interior superior */
+            padding: 20px 0;
+        }
+
+        .speaker {
+            text-align: center;
+        }
+
+        .speaker img {
+            border-radius: 50%;
+            max-width: 100px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            max-width: 20px;
+        }
+
+        /* botones redes sociales */
+        .btn-cuadro-redondeado {
+            display: inline-block;
+            border-radius: 20%;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .btn-cuadro-redondeado .ti {
+            color: white;
+        }
+
+        .btn-facebook {
+            background-color: #3b5998;
+        }
+
+        .btn-instagram {
+            background-color: #C13584;
+        }
+
+        .btn-x {
+            background-color: #131313;
+        }
+
+        .btn-linkedin {
+            background-color: #0077b5;
+        }
+
+        /* columnas */
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            text-align: center;
+            padding: 20px 0;
+            background-color: #000;
+            color: #FFF;
+        }
+
+        /* espacio_fondo */
+        .espacio_fondo {
+            background-color: #FFCC00;
+            height: 80px;
+        }
+
+        .logo_footer,
+        .copyright,
+        .social-media {
+            flex: 1 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+
+            .logo_footer,
+            .copyright {
+                flex: 1 0 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+
+            .logo_footer,
+            .copyright,
+            .social-media {
+                flex: 1 0 33.33%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <main>
+            <style>
+                .contenedor_img {
+                    /* background-color: #000; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40%;
+                    /* Reducir el tamaño del contenedor negro */
+                    padding: 20px;
+                }
+
+                .contenedor_img img {
+                    width: 60%;
+                }
+
+                .contenedor {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .contenedor_img,
+                h1,
+                .empty {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                h1 {
+                    text-align: center;
+                    /* Alinear el texto del h1 horizontalmente */
+                }
+                /* bg-negro */
+                .bg-negro{
+                    background-color: #000;
+                }
+            </style>
+            <div class="contenedor">
+                <div class="contenedor_img">
+                    <div class="bg-negro">
+                        <img src="img/dfx_bco.webp" alt="Difraxion Logo">
+                    </div>
+                </div>
+                
+                <h1>#SomosLaConexiónATusIdeas</h1>
+                <div class="empty"></div>
+            </div>
+            <p class="description"></i>En <strong>Difraxion</strong> tenemos más de <strong>15 años de
+                    experiencia</strong> trabajando con empresas del sector público y privado, a los cuales les
+                ofrecemos proyectos a la medida de sus necesidades.</p>
+            <p class="description">Somos expertos en <strong>potencializar tus ideas y conectar con ellas a través de
+                    nuestras soluciones de comunicación interna.</strong></p>
+            <div class="webinar">
+                <div class="webinar-header">
+                    <span>EN VIVO</span>
+                    <span>WEBINAR</span>
+                </div>
+                <div class="countdown">
+                    <div class="time">
+                        <span class="number">8</span>
+                        <span class="label">días</span>
+                    </div>
+                    <div class="time">
+                        <span class="number">23</span>
+                        <span class="label">hrs</span>
+                    </div>
+                    <div class="time">
+                        <span class="number">17</span>
+                        <span class="label">min</span>
+                    </div>
+                    <div class="time">
+                        <span class="number">53</span>
+                        <span class="label">seg</span>
+                    </div>
+                </div>
+                <div class="play-button">
+                    <img src="play-button.png" alt="Play Button">
+                </div>
+            </div>
+            <h2>Potencializa tu comunicación interna</h2>
+            <div class="speakers">
+                
+                <div class="contenedor_texto">
+                    <h3>fdsfsdf</h3>
+                    <h3>fdsfsdf</h3>
+                </div>
+                <div class="speaker">
+                    <img src="img/1.png" alt="David Enriquez">
+                    <p><strong>David Enriquez</strong><br>Director General Difraxion</p>
+                </div>
+                <div class="speaker">
+                    <img src="img/2.png" alt="Andrea Huerta">
+                    <p><strong>Andrea Huerta</strong><br>Gerente de proyectos</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="logo_footer">
+                <img src="img/dfx_bco.webp" alt="Difraxion Logo" width="150">
+            </div>
+            <div class="copyright">
+                <p>&copy; Difraxion is a registered licensed by Difraxion.</p>
+            </div>
+            <div class="social-media">
+                
+                <a href="#" class="btn-cuadro-redondeado btn-facebook"><i class="ti ti-brand-facebook"></i></a>
+                <a href="#" class="btn-cuadro-redondeado btn-instagram"><i class="ti ti-brand-instagram"></i></a>
+                <a href="#" class="btn-cuadro-redondeado btn-x"><i class="ti ti-brand-x"></i></a>
+                <a href="#" class="btn-cuadro-redondeado btn-linkedin"><i class="ti ti-brand-linkedin"></i></a>
+            </div>
+        </footer>
+        <div class="espacio_fondo">
+
+        </div>
+    </div>
+</body>
+
+</html>

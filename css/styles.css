@@ -1,0 +1,375 @@
+body {
+    background-color: #FFbd00 !important;
+}
+
+.amarillo {
+    background-color: #FFbd00 !important;
+}
+
+/* botones redes sociales */
+.btn-cuadro-redondeado {
+    display: inline-block;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 1px;
+    /* Aquí se agrega el margen interior */
+    background-color: #26a69a;
+    border-radius: 27%;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 3px;
+}
+
+.btn-cuadro-redondeado .ti {
+    color: white;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-instagram {
+    background-color: #C13584;
+}
+
+.btn-x {
+    background-color: #626262;
+}
+
+.btn-linkedin {
+    background-color: #0077b5;
+}
+
+/* columnas */
+
+.footer_p {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* espacio_fondo */
+.espacio_fondo {
+    background-color: #FFbd00 !important;
+    height: 80px;
+}
+
+.logo_footer,
+.copyright,
+.social-media {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .logo_footer,
+    .copyright {
+        flex: 1 0 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .logo_footer,
+    .copyright,
+    .social-media {
+        flex: 1 0 33.33%;
+    }
+}
+
+.marca_texto_negro {
+    color: #fff;
+    background-color: black;
+    /* aumeta 5px a la derecha el ancho */
+    padding-right: 8px;
+    padding-left: 8px;
+    /* texto en negritas */
+    font-weight: bold;
+}
+
+/* marcatexto blanco */
+.marca_texto_blanco {
+    font-weight: bold;
+    background-color: #FFF;
+}
+
+.texto_negro {
+    color: #000;
+}
+
+/* texto ene negritas */
+.texto_negritas {
+    font-weight: bold;
+}
+
+.tranparencia_img {
+    opacity: 0.5;
+    /* Ajusta este valor según tus necesidades */
+}
+
+.speakers {
+    display: flex;
+    justify-content: center;
+    background-color: #FFCC00;
+    gap: 20px;
+    /* margen interior superior */
+    padding: 20px 0;
+}
+
+.speaker {
+    text-align: center;
+}
+
+.speaker img {
+    border-radius: 50%;
+    max-width: 150px;
+    min-height: 150px;
+    width: 150px;
+    /* Ajusta este valor según tus necesidades */
+    height: 150px;
+}
+
+.filtro_gris {
+    filter: grayscale(100%);
+}
+
+.circulo_blanco {
+    border: 1px solid rgba(255, 255, 255, 0.713);
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    object-fit: cover;
+
+    /* Ajusta este valor según tus necesidades */
+}
+
+.texto_borde_atras_tranparencia {
+    /* letras tipo contorno */
+    -webkit-text-stroke: 1.5px rgba(12, 12, 31, 0.171);
+    /* relleno traparente y en gregitas o crueso */
+    color: transparent;
+    font-weight: bold;
+}
+
+.h4_sin_espacio {
+    margin: 0;
+    /* Elimina el margen arriba y abajo */
+    line-height: 1.2;
+    /* Ajusta la altura de línea para que los elementos h4 estén más juntos */
+}
+
+.contenedor_letras {
+    /* subir elemento 50px arriba de su pocision original  */
+    transform: translateY(-59px);
+    /* pasalo una capa abajo */
+    z-index: -1;
+    position: relative;
+    /* Hace que el contenedor se posicione en relación a su posición normal */
+    /* top: -20px; */
+}
+
+.contenedor_img {
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* Reducir el tamaño del contenedor negro */
+    padding: 20px;
+}
+
+.contenedor_img img {
+    width: 60%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_img,
+.empty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h1_custom tamaño de letra 25 px */
+.h1_custom {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.h1_custom span {
+    color: white;
+    /* Hace que el texto sea blanco */
+    /* Aquí puedes agregar las propiedades CSS para darle la forma que desees */
+}
+
+.logo_flotante {
+    position: fixed;
+    /* Hace que el logo se mantenga en la misma posición en la pantalla, independientemente del scroll */
+    top: 0;
+    /* Posiciona el logo en la parte superior de la pantalla */
+    left: 0;
+    /* Posiciona el logo en la parte derecha de la pantalla */
+    background-color: #000;
+    z-index: 0;
+
+}
+
+.logo_flotante img {
+    width: 250px;
+    margin: 10px
+}
+
+.descripcion {
+    color: #000 !important;
+    font-size: 23px;
+
+}
+
+.filtro_degradado {
+    filter: blur(5px);
+    opacity: 0.1 !important;
+    /* Agrega transparencia */
+}
+
+
+
+
+.contenedor_padre {
+    text-align: center;
+    /* Centra los elementos hijos horizontalmente */
+}
+
+.linea_intermedia_abajo {
+    height: 5px;
+    width: 45px;
+    background-color: white;
+}
+
+
+/* formulario ///////////////////////////////////////////////////////////////////////////////////////// */
+
+.body_custom_form {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container_custom_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-wrapper_custom_form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    /* Centra el elemento horizontalmente */
+    margin-top: 15px;
+}
+
+.title_custom_form {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+    position: relative;
+}
+
+.title_custom_form::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ffcc00;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.form_custom_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group_custom_form {
+    text-align: left;
+}
+
+.form-group-fullwidth_custom_form {
+    grid-column: span 2;
+}
+
+.label_custom_form {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.required_custom_form {
+    color: red;
+}
+
+.form-control_custom_form {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn_custom_form {
+    max-width: 20%;
+    min-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn_custom_form:hover {
+    background-color: #e6b800;
+}
+
+@media (max-width: 768px) {
+    .form_custom_form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group-fullwidth_custom_form {
+        grid-column: span 1;
+    }
+}

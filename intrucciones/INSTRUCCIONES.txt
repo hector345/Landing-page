@@ -12,5 +12,3 @@ Evidencia:
 - Si el sitio se subio a un servidor, mandar URL.
 
 
-
-
