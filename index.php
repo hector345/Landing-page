@@ -10,7 +10,7 @@ $dotenv->load();
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Difraxion - Contacto</title>
+  <title><?php echo $_ENV['APP_NAME']; ?> - Contacto</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -27,7 +27,7 @@ $dotenv->load();
 
 
   <div class="logo_flotante">
-    <img src="img/dfx_bco.webp" class="" alt="Difraxion Logo">
+    <img src="<?php echo $_ENV['APP_LOGO']; ?>" class="" alt="<?php echo $_ENV['APP_NAME']; ?> Logo">
   </div>
   <div style="position: fixed; right: 0; top: 0;">
     <img src="/svg/circulo_3_4.svg" alt="">
@@ -44,24 +44,22 @@ $dotenv->load();
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="h1_custom">#SomosLa<span>Conexión</span>ATusIdeas</h1>
-          <p class="descripcion  text-black-custom"></i>En <strong class="marca_texto_blanco">Difraxion</strong> tenemos
-            más de
-            <strong class="marca_texto_blanco">15 años de
-              experiencia</strong> trabajando con empresas del sector público y privado, a los cuales les
-            ofrecemos proyectos a la medida de sus necesidades.
-          </p>
-          <p class="descripcion  text-black-custom">Somos expertos en <strong class="texto_negritas">potencializar tus
-              ideas y
-              conectar con ellas a través de
-              nuestras soluciones</strong> de comunicación interna.</p>
+        <div class="container">
+            <div class="row center">
+                <h1 class="h1_custom">#Innovamos<span>Juntos</span></h1>
+                <p class="descripcion text-black-custom">En <strong class="marca_texto_blanco"><?php echo $_ENV['APP_NAME']; ?></strong> nos
+                    dedicamos a
+                    <strong class="marca_texto_blanco">transformar tus ideas</strong> en proyectos exitosos, con más de
+                    <strong class="marca_texto_blanco">10 años de experiencia</strong> en el sector tecnológico.
+                </p>
+                <p class="descripcion text-black-custom">Nos especializamos en <strong class="texto_negritas">crear soluciones
+                        innovadoras</strong> que conectan con tus objetivos y potencian tu crecimiento.</p>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" class="filtro_degradado" alt="Unsplashed background img 2"></div>
-  </div>
+    <div class="parallax"><img src="background3.jpg" class="filtro_degradado" alt="Unsplashed background img 3"></div>
+</div>
+
 
 
   <div class="section black">
@@ -133,21 +131,21 @@ $dotenv->load();
   <div class="speakers">
     <div class="speaker">
       <img class="filtro_gris circulo_blanco" src="img/2.jpg" alt="David Enriquez">
-      <p><strong class="texto_negritas">David Enriquez</strong><br>Director General Difraxion</p>
+      <p><strong class="texto_negritas">Juan Pérez</strong><br>Director General de Difraxion</p>
     </div>
     <div class="speaker">
       <img class="filtro_gris circulo_blanco" src="img/1.jpg" alt="Andrea Huerta">
-      <p><strong class="texto_negritas">Andrea Huerta</strong><br>Gerente de proyectos</p>
+      <p><strong class="texto_negritas">María López</strong><br>Gerente de proyectos</p>
     </div>
   </div>
 
 
   <footer class="footer_p">
     <div class="logo_footer">
-      <img src="img/dfx_bco.webp" alt="Difraxion Logo" width="150">
+      <img src="<?php echo $_ENV['APP_LOGO']; ?>" alt="<?php echo $_ENV['APP_NAME']; ?> Logo" width="150">
     </div>
     <div class="copyright">
-      <p>&copy; Difraxion is a registered licensed by Difraxion.</p>
+      <p>&copy; <?php echo $_ENV['APP_NAME']; ?> is a registered licensed by <?php echo $_ENV['APP_NAME']; ?>.</p>
     </div>
     <div class="social-media">
       <a href="#" class="btn btn-cuadro-redondeado btn-facebook"><i class="ti ti-brand-facebook"></i></a>

@@ -89,9 +89,3 @@ CREATE TABLE `contacts` (
 
 - Se implementó reCAPTCHA para evitar el registro de datos por parte de sistemas automáticos.
 - Además del almacenamiento de datos, se utilizó PDO para prevenir la inyección SQL.
-
-
-## Evidencia
-
-- Comprimir y enviar los archivos del proyecto a `raul@difraxion.com`. Si el archivo es muy grande, utilizar WeTransfer.
-- Si el sitio se subió a un servidor, incluir la URL en el correo.

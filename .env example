@@ -14,3 +14,5 @@ CORREO_ASUNTO="Asunto del correo"
 CORREO_ASUNTO_CC="TEST DFX"
 
 APP_URL=http://localdesarrollodigital.tech/
+APP_NAME="Desarrollo Digital"
+APP_LOGO="${APP_URL}svg/logoipsum-330.svg"
